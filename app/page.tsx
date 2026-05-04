@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { CaduHeroLogoDynamic } from "./components/CaduHeroLogoDynamic";
 import { ScrollEffects } from "./components/ScrollEffects";
 import {
   PlanosInteligenciaPilaresSection,
@@ -68,7 +70,20 @@ export default function Home() {
 
         <div className="wrap">
           <div className="hero-brand-stage" aria-hidden="true">
-            <div className="hero-brand enter-1">CADU</div>
+            <div className="hero-brand-lockup-visual">
+              <CaduHeroLogoDynamic />
+              <p className="hero-brand-para enter-2">para</p>
+              <div className="hero-brand-partners enter-3">
+                <Image
+                  src="/cadu-brand/amplan-branding.svg"
+                  alt=""
+                  width={3803}
+                  height={913}
+                  className="hero-brand-amplan-img"
+                  unoptimized
+                />
+              </div>
+            </div>
           </div>
 
           <div className="hero-scrollspace" data-hero-scrollspace />

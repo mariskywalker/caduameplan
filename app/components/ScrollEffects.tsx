@@ -29,9 +29,13 @@ export function ScrollEffects() {
           const scrollSpace = document.querySelector<HTMLElement>("[data-hero-scrollspace]");
           if (hero && scrollSpace) {
             const y = Math.max(0, window.scrollY);
-            const start = hero.offsetTop;
-            const span = Math.max(1, scrollSpace.offsetHeight);
-            const p = Math.max(0, Math.min(1, (y - start) / span));
+            const heroDocTop = hero.getBoundingClientRect().top + y;
+            const span = Math.max(
+              scrollSpace.offsetHeight,
+              Math.round(window.innerHeight * 1.15),
+              1,
+            );
+            const p = Math.max(0, Math.min(1, (y - heroDocTop) / span));
             document.documentElement.style.setProperty("--hero-progress", String(p));
           }
 
@@ -58,9 +62,13 @@ export function ScrollEffects() {
         const scrollSpace = document.querySelector<HTMLElement>("[data-hero-scrollspace]");
         if (hero && scrollSpace) {
           const y = Math.max(0, window.scrollY);
-          const start = hero.offsetTop;
-          const span = Math.max(1, scrollSpace.offsetHeight);
-          const p = Math.max(0, Math.min(1, (y - start) / span));
+          const heroDocTop = hero.getBoundingClientRect().top + y;
+          const span = Math.max(
+            scrollSpace.offsetHeight,
+            Math.round(window.innerHeight * 1.15),
+            1,
+          );
+          const p = Math.max(0, Math.min(1, (y - heroDocTop) / span));
           document.documentElement.style.setProperty("--hero-progress", String(p));
         }
 

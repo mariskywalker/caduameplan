@@ -318,7 +318,7 @@ section {
   gap: 10px;
   pointer-events: none;
   text-align: center;
-  z-index: 0;
+  z-index: 2;
 
   /* cinematic scroll */
   transform:
@@ -333,13 +333,69 @@ section {
   height: 120vh;
 }
 
-.hero-brand {
-  font-family: var(--font-logo), -apple-system, system-ui, sans-serif;
-  font-weight: 900;
-  letter-spacing: -0.06em;
-  line-height: 0.78;
-  font-size: clamp(7.5rem, 26vw, 18rem);
-  color: #F74E45;
+/* Bloco único: Lottie + “para” + faixa Ampla — mesma largura */
+.hero-brand-lockup-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: min(88vw, 640px);
+  max-width: 100%;
+  margin-inline: auto;
+  gap: clamp(0.35rem, 1.5vw, 0.65rem);
+}
+
+.hero-brand-para {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: clamp(1.25rem, 4.5vw, 1.875rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--cadu-rose-2);
+  text-align: center;
+}
+
+/* Hero: composição completa via Lottie (SVGator → logo_g.json) */
+.hero-brand-lottie-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  /* Mesmo espaço antes do Lottie hidratar (732×486 no JSON) */
+  aspect-ratio: 732 / 486;
+}
+
+.hero-brand-lottie-loading {
+  /* shimmer opcional: área reservada já vem do aspect-ratio */
+  box-sizing: border-box;
+}
+
+.hero-brand-lottie {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-brand-lottie svg {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* Faixa Ampla / branding — mesma largura que o Lottie (pai .hero-brand-lockup-visual) */
+.hero-brand-partners {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-brand-amplan-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.94;
 }
 
 .hero-content {
@@ -596,14 +652,21 @@ section {
 
 .hero-stats {
   display: flex;
-  gap: 3.5rem;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: clamp(1rem, 2.4vw, 3.5rem);
   padding-top: 3rem;
   border-top: 1px solid var(--border);
 }
 
+.hero-stats > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .stat-num {
   display: block;
-  font-size: 3rem;
+  font-size: clamp(1.85rem, 3vw, 3rem);
   font-weight: 900;
   letter-spacing: -0.04em;
   color: var(--black);
@@ -622,6 +685,10 @@ section {
   margin-top: 6px;
   line-height: 1.45;
   max-width: 160px;
+}
+
+.hero-stats .stat-label {
+  max-width: none;
 }
 
 /* ============================================================
