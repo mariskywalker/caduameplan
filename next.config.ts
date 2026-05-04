@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 /**
- * Para um projeto Vercel só da Tivita (mesmo código que caduameplan):
- * define `CADU_SITE_ROOT=/tivita` nas Environment Variables desse projeto.
- * Assim https://cadutivita.vercel.app/ abre a landing em /tivita.
+ * Raiz `/` → landing Tivita quando:
+ * - `CADU_SITE_ROOT=/tivita` (override manual na Vercel), ou
+ * - deploy do repo `cadutivita` (`VERCEL_GIT_REPO_SLUG`, definido pela Vercel).
+ * Projeto `caduameplan` no GitHub mantém `/` como Ameplan.
  */
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1", "localhost"],
@@ -12,8 +13,15 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
   async redirects() {
-    const dest = process.env.CADU_SITE_ROOT?.trim();
-    if (dest && dest.startsWith("/") && dest !== "/") {
+    const explicit = process.env.CADU_SITE_ROOT?.trim();
+    const slug = process.env.VERCEL_GIT_REPO_SLUG;
+    const dest =
+      explicit && explicit.startsWith("/") && explicit !== "/"
+        ? explicit
+        : slug === "cadutivita"
+          ? "/tivita"
+          : null;
+    if (dest) {
       return [{ source: "/", destination: dest, permanent: false }];
     }
     return [];
