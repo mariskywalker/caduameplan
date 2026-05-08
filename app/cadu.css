@@ -356,7 +356,7 @@ section {
   width: min(88vw, 640px);
   max-width: 100%;
   margin-inline: auto;
-  gap: clamp(0.06rem, 0.6vw, 0.22rem);
+  gap: clamp(0rem, 0.18vw, 0.06rem);
 }
 
 .hero-brand-para {
@@ -372,11 +372,11 @@ section {
 }
 
 /* Ajuste fino do espaçamento do “para” entre logos */
-.hero-brand-lottie-wrap { margin-bottom: clamp(0.02rem, 0.4vw, 0.14rem); }
-.hero-brand-partners { margin-top: clamp(0.02rem, 0.4vw, 0.14rem); }
+.hero-brand-lottie-wrap { margin-bottom: clamp(-0.08rem, -0.35vw, -0.02rem); }
+.hero-brand-partners { margin-top: clamp(-0.12rem, -0.55vw, -0.04rem); }
 
 /* Colar o logo parceiro um pouco mais no “para” (sem quebrar responsivo) */
-.hero-brand-bradesco-img { margin-top: clamp(-0.16rem, -0.6vw, -0.06rem); }
+.hero-brand-bradesco-img { margin-top: clamp(-0.32rem, -1.2vw, -0.14rem); }
 
 /* Hero: composição completa via Lottie (SVGator → logo_g.json) */
 .hero-brand-lottie-wrap {
