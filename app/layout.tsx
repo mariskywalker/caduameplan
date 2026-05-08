@@ -16,9 +16,9 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CADU × Ameplan — Piloto",
+  title: "CADU × Bradesco Saúde",
   description:
-    "Material CADU × Ameplan: visibilidade e controle no cuidado em TEA — dados estruturados e piloto sem troca de sistemas core.",
+    "Infraestrutura longitudinal para coordenação de jornadas complexas em neurodesenvolvimento. Material institucional para conversa técnica com operadoras.",
 };
 
 export default function RootLayout({

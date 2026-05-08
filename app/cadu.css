@@ -24,7 +24,7 @@
   --black:      #0E0E0C;
   --red:        #E8351A;   /* primary CTA / accent */
   --red-soft:   #FFF1EE;   /* red tint for badges */
-  /* Rosa CADU (meio pêssego) — CTA / #proximo e referências de marca */
+  /* Rosa CADU (meio pêssego) - CTA / #proximo e referências de marca */
   --cadu-rose:  #EEB5A0;
   --cadu-rose-2: #E8A28C;
   --cadu-rose-3: #F2C9BA;
@@ -784,7 +784,7 @@ section {
 }
 
 #urgencia .urgencia-list li::before {
-  content: "—";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--red);
@@ -2316,7 +2316,7 @@ footer {
 
 #contexto .urgencia-list li::before,
 #tivita-landing .urgencia-list li::before {
-  content: "—";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--red);
