@@ -356,7 +356,7 @@ section {
   width: min(88vw, 640px);
   max-width: 100%;
   margin-inline: auto;
-  gap: clamp(0.35rem, 1.5vw, 0.65rem);
+  gap: clamp(0.12rem, 0.9vw, 0.35rem);
 }
 
 .hero-brand-para {
@@ -370,6 +370,10 @@ section {
   color: var(--cadu-rose-2);
   text-align: center;
 }
+
+/* Ajuste fino do espaçamento do “para” entre logos */
+.hero-brand-lottie-wrap { margin-bottom: clamp(0.05rem, 0.6vw, 0.22rem); }
+.hero-brand-partners { margin-top: clamp(0.05rem, 0.6vw, 0.22rem); }
 
 /* Hero: composição completa via Lottie (SVGator → logo_g.json) */
 .hero-brand-lottie-wrap {
