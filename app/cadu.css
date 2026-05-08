@@ -398,6 +398,14 @@ section {
   opacity: 0.94;
 }
 
+.hero-brand-bradesco-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.94;
+  filter: saturate(0.96);
+}
+
 .hero-content {
   padding: 8rem 0 6rem;
   border-bottom: 1px solid var(--border);

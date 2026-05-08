@@ -60,18 +60,16 @@ export default function Home() {
             <div className="hero-brand-lockup-visual">
               <CaduHeroLogoDynamic />
               <p className="hero-brand-para enter-2">para</p>
-              <div className="hero-brand-partners enter-3" aria-hidden="true">
-                <div
-                  style={{
-                    fontSize: "clamp(2.1rem, 5.2vw, 4.1rem)",
-                    fontWeight: 900,
-                    letterSpacing: "-0.045em",
-                    color: "rgba(14,14,12,0.45)",
-                    lineHeight: 1,
-                  }}
-                >
-                  Bradesco Saúde
-                </div>
+              <div className="hero-brand-partners enter-3">
+                {/* eslint-disable-next-line @next/next/no-img-element -- asset estático */}
+                <img
+                  src="/cadu-brand/bradesco-saude.png"
+                  alt="Bradesco Saúde"
+                  width={768}
+                  height={400}
+                  decoding="async"
+                  className="hero-brand-bradesco-img"
+                />
               </div>
             </div>
           </div>
