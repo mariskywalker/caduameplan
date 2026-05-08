@@ -16,9 +16,9 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CADU × Bradesco Saúde",
+  title: "CADU × Bradesco Saúde. Controle e Auditoria em Neurodesenvolvimento",
   description:
-    "Infraestrutura longitudinal para coordenação de jornadas complexas em neurodesenvolvimento. Material institucional para conversa técnica com operadoras.",
+    "CADU oferece rastreabilidade real de sessões, alertas automáticos de inconsistência e dados de evolução clínica para operadoras combaterem fraude em neurodesenvolvimento.",
 };
 
 export default function RootLayout({
