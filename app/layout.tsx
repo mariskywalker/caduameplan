@@ -31,6 +31,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${montserratAlternates.variable} ${dmMono.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#F7F3EC" />
+      </head>
       <body className="min-h-full flex flex-col cadu-body">{children}</body>
     </html>
   );
