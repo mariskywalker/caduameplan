@@ -102,7 +102,7 @@ export default function Home() {
 
               <div className="hero-btns reveal d3" style={{ flexWrap: "wrap", rowGap: "8px" }}>
                 <a
-                  href="mailto:contato@cadu.health?subject=Conversa%20t%C3%A9cnica%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
+                  href="mailto:ola@cadu.health?subject=Conversa%20t%C3%A9cnica%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
                   className="btn-red"
                 >
                   Agendar conversa técnica
@@ -111,7 +111,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="mailto:contato@cadu.health?subject=Material%20institucional%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
+                  href="mailto:ola@cadu.health?subject=Material%20institucional%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
                   className="btn-ghost"
                 >
                   Receber material institucional
@@ -369,7 +369,7 @@ export default function Home() {
 
           <div className="cta-btns reveal d3" style={{ flexWrap: "wrap", justifyContent: "center", rowGap: "10px" }}>
             <a
-              href="mailto:contato@cadu.health?subject=Conversa%20t%C3%A9cnica%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
+              href="mailto:ola@cadu.health?subject=Conversa%20t%C3%A9cnica%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
               className="btn-white"
             >
               Agendar conversa técnica
@@ -378,7 +378,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="mailto:contato@cadu.health?subject=Material%20institucional%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
+              href="mailto:ola@cadu.health?subject=Material%20institucional%20-%20CADU%20%C3%97%20Bradesco%20Sa%C3%BAde"
               className="btn-outline"
             >
               Receber material

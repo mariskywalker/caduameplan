@@ -159,7 +159,7 @@ export function PlanosFraudeIntegridadeSection() {
             </p>
             <div style={{ marginTop: "1.15rem", display: "flex", justifyContent: "center", gap: "0.75rem", flexWrap: "wrap" }}>
               <a
-                href="mailto:contato@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
+                href="mailto:ola@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
                 className="btn-red"
                 style={{ display: "inline-flex", alignItems: "center", gap: "0.45rem" }}
               >
@@ -168,7 +168,7 @@ export function PlanosFraudeIntegridadeSection() {
                   <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
               </a>
-              <a href="mailto:contato@cadu.health?subject=CADU%20-%20visibilidade%20cl%C3%ADnica%20vs%20faturamento" className="btn-ghost">
+              <a href="mailto:ola@cadu.health?subject=CADU%20-%20visibilidade%20cl%C3%ADnica%20vs%20faturamento" className="btn-ghost">
                 Agendar conversa rápida
               </a>
             </div>

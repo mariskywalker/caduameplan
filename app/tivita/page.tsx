@@ -100,13 +100,13 @@ export default function TivitaPage() {
                 </p>
                 <div className="hero-btns reveal d3">
                   <a
-                    href="mailto:contato@cadu.health?subject=Parceria%20CADU%20×%20Tivita"
+                    href="mailto:ola@cadu.health?subject=Parceria%20CADU%20×%20Tivita"
                     className="btn-red"
                   >
                     Explorar parceria
                     <ArrowMd />
                   </a>
-                  <a href="mailto:contato@cadu.health?subject=Contato%20CADU%20×%20Tivita" className="btn-ghost">
+                  <a href="mailto:ola@cadu.health?subject=Contato%20CADU%20×%20Tivita" className="btn-ghost">
                     Falar com a equipe
                   </a>
                 </div>
@@ -602,13 +602,13 @@ export default function TivitaPage() {
             </p>
             <div className="cta-btns reveal d3">
               <a
-                href="mailto:contato@cadu.health?subject=Iniciar%20conversa%20de%20parceria%20CADU%20×%20Tivita"
+                href="mailto:ola@cadu.health?subject=Iniciar%20conversa%20de%20parceria%20CADU%20×%20Tivita"
                 className="btn-white"
               >
                 Iniciar conversa de parceria
                 <ArrowMd />
               </a>
-              <a href="mailto:contato@cadu.health?subject=Piloto%20conjunto%20CADU%20×%20Tivita" className="btn-outline">
+              <a href="mailto:ola@cadu.health?subject=Piloto%20conjunto%20CADU%20×%20Tivita" className="btn-outline">
                 Propor piloto conjunto
               </a>
             </div>
